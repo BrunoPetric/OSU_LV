@@ -3,7 +3,7 @@ spam_words = 0
 ham = 0 
 ham_words = 0
 ex_counter = 0
-fhand = open ('SMSSpamCollection.txt')
+fhand = open ('SMSSpamCollection.txt', encoding="utf8")
 for line in fhand:
     line = line.rstrip ()
     words = line.split ()
